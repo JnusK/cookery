@@ -1,0 +1,147 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .whisk-spin {
+        transform-origin: 50px 50px;
+        animation: whisk-spin 1.4s linear infinite;
+      }
+      .stir-swirl {
+        transform-origin: 50px 50px;
+        animation: whisk-spin 2s linear infinite;
+      }
+      .stir-swirl-reverse {
+        transform-origin: 50px 50px;
+        animation: whisk-spin-reverse 2.8s linear infinite;
+      }
+      @keyframes whisk-spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes whisk-spin-reverse {
+        0% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .whisk-spin,
+        .stir-swirl,
+        .stir-swirl-reverse {
+          animation: none;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Swirling stir vortex trails -->
+  <g class="stir-swirl">
+    <path
+      d="M 14 50 A 36 36 0 0 1 86 50"
+      fill="none"
+      stroke="black"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-dasharray="24 32"
+      opacity="0.35"
+    />
+  </g>
+  <g class="stir-swirl-reverse">
+    <path
+      d="M 86 50 A 36 36 0 0 1 14 50"
+      fill="none"
+      stroke="black"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-dasharray="16 40"
+      opacity="0.25"
+    />
+  </g>
+
+  <!-- Animated Whisk -->
+  <g class="whisk-spin">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 50 50"
+      to="360 50 50"
+      dur="1.4s"
+      repeatCount="indefinite"
+    />
+    <!-- Whisk positioned diagonally for balanced rotational symmetry -->
+    <g transform="rotate(45 50 50)">
+      <!-- Hanging Loop -->
+      <circle
+        cx="50"
+        cy="14"
+        r="3"
+        fill="none"
+        stroke="black"
+        stroke-width="2"
+      />
+
+      <!-- Handle -->
+      <rect
+        x="47.5"
+        y="18"
+        width="5"
+        height="20"
+        rx="2.5"
+        fill="black"
+      />
+
+      <!-- Ferrule / Collar -->
+      <rect
+        x="45.5"
+        y="38"
+        width="9"
+        height="4.5"
+        rx="1"
+        fill="black"
+      />
+
+      <!-- Outer Wire Loop -->
+      <path
+        d="M 48 42.5 C 35 52, 33 76, 42 85 C 44.5 87.2, 47 88, 50 88 C 53 88, 55.5 87.2, 58 85 C 67 76, 65 52, 52 42.5"
+        fill="none"
+        stroke="black"
+        stroke-width="1.2"
+        stroke-linecap="round"
+      />
+
+      <!-- Middle Wire Loop -->
+      <path
+        d="M 48.8 42.5 C 39 52, 38.5 76, 44 85.5 C 46 87.2, 48 88, 50 88 C 52 88, 54 87.2, 56 85.5 C 61.5 76, 61 52, 51.2 42.5"
+        fill="none"
+        stroke="black"
+        stroke-width="1.1"
+        stroke-linecap="round"
+      />
+
+      <!-- Inner Wire Loop -->
+      <path
+        d="M 49.4 42.5 C 43.5 53, 43.5 78, 46.5 86.5 C 47.8 87.6, 48.8 88, 50 88 C 51.2 88, 52.2 87.6, 53.5 86.5 C 56.5 78, 56.5 53, 50.6 42.5"
+        fill="none"
+        stroke="black"
+        stroke-width="1.0"
+        stroke-linecap="round"
+      />
+
+      <!-- Center Wire -->
+      <line
+        x1="50"
+        y1="42.5"
+        x2="50"
+        y2="88"
+        stroke="black"
+        stroke-width="1.0"
+        stroke-linecap="round"
+      />
+    </g>
+  </g>
+</svg>
