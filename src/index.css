@@ -1,69 +1,72 @@
 @font-face {
-  font-family: 'Dongle';
-  src: url('./assets/fonts/Dongle/Dongle-Light.ttf') format('truetype');
+  font-family: "Dongle";
+  src: url("./assets/fonts/Dongle/Dongle-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Dongle';
-  src: url('./assets/fonts/Dongle/Dongle-Regular.ttf') format('truetype');
+  font-family: "Dongle";
+  src: url("./assets/fonts/Dongle/Dongle-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Dongle';
-  src: url('./assets/fonts/Dongle/Dongle-Bold.ttf') format('truetype');
+  font-family: "Dongle";
+  src: url("./assets/fonts/Dongle/Dongle-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Amaranth';
-  src: url('./assets/fonts/Amaranth/Amaranth-Regular.ttf') format('truetype');
+  font-family: "Amaranth";
+  src: url("./assets/fonts/Amaranth/Amaranth-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Amaranth';
-  src: url('./assets/fonts/Amaranth/Amaranth-Italic.ttf') format('truetype');
+  font-family: "Amaranth";
+  src: url("./assets/fonts/Amaranth/Amaranth-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Amaranth';
-  src: url('./assets/fonts/Amaranth/Amaranth-Bold.ttf') format('truetype');
+  font-family: "Amaranth";
+  src: url("./assets/fonts/Amaranth/Amaranth-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Amaranth';
-  src: url('./assets/fonts/Amaranth/Amaranth-BoldItalic.ttf') format('truetype');
+  font-family: "Amaranth";
+  src: url("./assets/fonts/Amaranth/Amaranth-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Google Sans Flex';
-  src: url('./assets/fonts/Google_Sans_Flex/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf') format('truetype');
+  font-family: "Google Sans Flex";
+  src: url("./assets/fonts/Google_Sans_Flex/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf")
+    format("truetype");
   font-weight: 100 1000;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  font-family: 'Dongle', 'Amaranth', 'Google Sans Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family:
+    "Dongle", "Amaranth", "Google Sans Flex", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
